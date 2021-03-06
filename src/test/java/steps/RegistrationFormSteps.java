@@ -60,6 +60,10 @@ public class RegistrationFormSteps {
         registrationPage.city.click();
         registrationPage.findElementByText(city).click();
         registrationPage.chooseFileButton.uploadFile(cv);
+    }
+
+    @Step("Submit registration form")
+    public void submitForm() {
         registrationPage.submitButton.click();
     }
 
