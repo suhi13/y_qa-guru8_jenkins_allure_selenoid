@@ -58,7 +58,7 @@ public class RegistrationFormSteps {
         registrationPage.state.scrollIntoView(true).click();
         registrationPage.findElementByText(state).click();
         registrationPage.city.click();
-        registrationPage.findElementByText(city).click();
+        registrationPage.findElementByText("New York").click();
         registrationPage.chooseFileButton.uploadFile(cv);
         registrationPage.submitButton.click();
     }
