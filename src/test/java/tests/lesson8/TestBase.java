@@ -21,7 +21,6 @@ public class TestBase {
     static void setup() {
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.pageLoadTimeout = 60000;
         Configuration.startMaximized = true;
 
         if(System.getProperty("remote_driver") != null) {
